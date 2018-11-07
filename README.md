@@ -1,4 +1,4 @@
-Gears to Peers
+Gear to Peer
 Description:
 Dynamically display query results of our database of equipment available for rent, based on activity and location.  Lister has option to give pro advice and to display address or not.  Include user accounts.
 
