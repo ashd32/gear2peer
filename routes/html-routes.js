@@ -15,12 +15,12 @@ module.exports = function(app) {
   // In each of the below cases the user is shown an HTML page of content
   // ---------------------------------------------------------------------------
 
-  app.get('/products', function(req, res) {
-    res.sendFile(path.join(__dirname, '../public/products.html'));
+  app.get('/results', function(req, res) {
+    res.sendFile(path.join(__dirname, '../public/results.html'));
   });
 
-  app.get('/shopping-cart', function(req, res) {
-    res.sendFile(path.join(__dirname, '../public/shopping-cart.html'));
+  app.get('/posting', function(req, res) {
+    res.sendFile(path.join(__dirname, '../public/posting.html'));
   });
 
   app.get('/', function(req, res) {

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- bootstrap link -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+    <!-- font awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- css link -->
+    <link rel="stylesheet" src="../css/style.css">
+    <title>Posting</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <!-- navbar -->
+        <nav class="navbar navbar-light bg-light" id = "navBar">
+            <a id = "logoImg" class="navbar-brand" href="./index.html">
+                <img src="https://via.placeholder.com/50" width="30" height="30" alt="logo">
+            </a>
+            <form class="form-inline">
+                <input id = searchInput class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button id = "searchBtn" type="button" class="btn btn-default">
+                        <i class="fa fa-search"></i>
+                </button>
+            </form>
+        </nav>
+        <!-- photo gallery -->
+        <div id = postingPhotoGallery class=row>
+            <div class="col-md-6">
+                <img class= postingLgImg src=https://via.placeholder.com/630x250>
+            </div>
+            <div class=col-md-6>
+                <div class = "row">
+                    <div class = "col-md-6">
+                            <img class = postingImg1 src=https://via.placeholder.com/320x125>
+                    </div>
+                    <div class = "col-md-6">
+                            <img class = postingImg2 src=https://via.placeholder.com/320x125>
+                    </div>
+                </div>
+                <div class = "row">
+                        <div class = "col-md-6">
+                                <img class = postingImg3 src=https://via.placeholder.com/320x125>
+                        </div>
+                        <div class = "col-md-6">
+                                <img class = postingImg4 src=https://via.placeholder.com/320x125>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <br><br>
+<!-- information goes here -->
+        <div class = "row">
+            <div class = "col-md-5">
+                <h1 class = "postingHeadline">Headline Goes Here</h1>
+                <p class = "postingLocation">Location</p>
+                <ul class = postingInfoList>
+                    <li>Bullet Point 1</li>
+                    <li>Bullet Point 2</li>
+                    <li>Bullet Point 3</li>
+                    <li>Bullet Point 4</li>
+                    <li>Bullet Point 5</li>
+                    <li>Bullet Point 6</li>
+                </ul>
+                <hr>
+                <p class = "postingDescription">Phasellus semper tortor quis viverra pretium. Sed volutpat, leo ac tempor mollis, massa urna rhoncus metus, varius tempus ante augue eget est. Etiam ac lacinia massa, a venenatis diam. Curabitur nec luctus metus. Aenean molestie leo tellus, sit amet interdum nisl vestibulum tincidunt. Fusce dictum risus ut molestie tempor. Curabitur vestibulum lectus id arcu imperdiet convallis. Nulla vitae nulla pulvinar, consectetur nulla quis, posuere lectus. Aenean viverra tellus ac erat blandit, sit amet vulputate nibh rutrum. Proin ex nisi, aliquam at lacus et, pretium mollis tellus. Vestibulum interdum velit quis convallis vehicula. Quisque id leo sem. Nam ut ligula porttitor felis dapibus auctor. Fusce imperdiet fringilla neque in accumsan. Nunc rutrum convallis suscipit.</p>
+                <hr>
+                <h3 class = "postingReviews">Reviews</h3>
+                <hr>
+                <p class = "postingUserReview"><b class = "postingUserName">Name:</b> "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pulvinar dolor turpis, id porttitor leo pretium eget. Donec a felis consequat, bibendum leo et, dictum urna. Nunc vehicula, nulla id molestie lobortis, purus enim malesuada dolor, lacinia pulvinar elit mauris quis elit. Duis in faucibus dolor"</p>
+                <hr>
+                <p><b>Name:</b> "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pulvinar dolor turpis, id porttitor leo pretium eget. Donec a felis consequat, bibendum leo et, dictum urna. Nunc vehicula, nulla id molestie lobortis, purus enim malesuada dolor, lacinia pulvinar elit mauris quis elit. Duis in faucibus dolor"</p>
+<!-- insert map here? -->
+                <hr>
+                <h3 class = "postingLender">Meet your Lender</h3>
+                <p class = "postingLenderDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pulvinar dolor turpis, id porttitor leo pretium eget. Donec a felis consequat, bibendum leo et, dictum urna. Nunc vehicula, nulla id molestie lobortis, purus enim malesuada dolor, lacinia pulvinar elit mauris quis elit. Duis in faucibus dolor</p>
+                <hr>
+                <button type="button" id ="contactLender" class="btn btn-primary">Contact Lender</button>
+            </div>
+            <div class = "col-md-2"></div>
+<!-- Request to book Card -->
+            <div class = "col-md-5">
+                    <div id = "postingCard" class="card">
+                            <div id = "postingCardBody" class="card-body">
+                                <h2 class = "postingPrice">Price: $$$</h2>
+                                <hr>
+                                <div class="form-group">
+                                        <label for="exampleFormControlSelect1">Quantity</label>
+                                        <select class="form-control" id="exampleFormControlSelect1">
+                                          <option>1</option>
+                                          <option>2</option>
+                                          <option>3</option>
+                                          <option>4</option>
+                                          <option>5</option>
+                                        </select>
+                                      </div>
+                                <div>
+                                    <button id = "reqToBookBtn" type="button" class="btn btn-primary">Request to Book</button>
+                                </div>
+
+                            </div>
+                          </div>
+            </div>
+
+
+        </div>
+
+</body>
+<!--bootstrap jquery scripts -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+
+</html>
