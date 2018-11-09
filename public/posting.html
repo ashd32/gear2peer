@@ -59,6 +59,24 @@
                           </div>
                                 <br><br>
                             <!-- information goes here -->
+                            <div class = "row">
+                                <div class = "col-md-12">
+                                    <nav style = "height: 100px;" id = "exNav"></nav>
+                                </div>
+                                <script type="text/javascript">
+                                    (function($) {          
+                                        $(document).ready(function(){                    
+                                            $(window).scroll(function(){                          
+                                                if ($(this).scrollTop() > 200) {
+                                                    $('#exNav').fadeIn(500);
+                                                } else {
+                                                    $('#exNav').fadeOut(500);
+                                                }
+                                            });
+                                        });
+                                    })(jQuery);
+                                    </script>
+                            </div>
                             <div class="row">
                                 <div class="col-md-5">
                                     <h1 class="postingHeadline">Headline Goes Here</h1>
@@ -84,7 +102,7 @@
                                         porttitor felis dapibus auctor. Fusce imperdiet fringilla neque in accumsan.
                                         Nunc rutrum convallis suscipit.</p>
                                     <hr>
-                                    <h3 class="postingReviews">Reviews</h3>
+                                    <h3 id ="postingReviews">Reviews</h3>
                                     <hr>
                                     <p class="postingUserReview"><b class="postingUserName">Name:</b> "Lorem ipsum
                                         dolor sit amet, consectetur adipiscing elit. Aliquam pulvinar dolor turpis, id
@@ -114,7 +132,7 @@
                                     <div id="postingCard" class="card">
                                         <div id="postingCardBody" class="card-body">
                                             <h2 class="postingPrice">Price: $$ <small>per night</small></h2>
-                                            <p><small>Reviews:</small></p>
+                                            <p><small><a class="reviewsLink" href="#postingReviews">Reviews:</a></small></p>
                                             <div class = "reviewStars">
                                                     <i class="fa fa-star" aria-hidden="true"></i>
                                                     <i class="fa fa-star" aria-hidden="true"></i>
@@ -162,8 +180,10 @@
 
 </body>
 <!--bootstrap jquery scripts -->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
     crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"

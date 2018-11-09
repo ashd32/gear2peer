@@ -90,10 +90,10 @@ html {
 
 /* Posting */
 #postingCard {
-    position: fixed;
+    position: sticky;
     right: 5%;
     top: 50%;
-    width: 35%;
+    width: 90%;
 }
 #postingCardBody .postingPrice small{
     font-size: 12px;
