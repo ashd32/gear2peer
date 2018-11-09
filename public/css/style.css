@@ -1,3 +1,116 @@
-body {
-    background-color: blue;
+html {
+    scroll-behavior: smooth;
+  }
+.imageContainer { 
+    background: url(../images/altitude-clouds-cold-933054.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 700px;
+  }
+
+.imageContainer p {
+    position: relative;
+    top: 450px;
+    font-size: 15px;
+    text-align:center;
+    color: white;
 }
+
+.imageContainer .adventureButton{
+    position: relative;
+    top: 350px;
+    background-color: transparent;
+    border: solid 2px white;
+    color: white;
+    padding: 8px;
+    margin-left: 95px;
+}
+.navbar ul li{
+    color:white;
+    font-size: 15px;
+    margin: 10px;
+}
+#spaceDiv{
+    height: 150px;
+}
+
+#inputContainer { 
+    background: url(../images/bicycle-cloud-clouds-258045.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 600px;
+  }
+.form-group{
+    font-size: 24px;
+}
+#userInputSubmit{
+    background-color: rgb(35, 56, 34) 
+}
+#categoryContainer {
+    height: 700px;
+}
+/* Social icons */
+/* Style all font awesome icons */
+.fa {
+    padding: 10px;
+    font-size: 15px;
+    width: 35px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+/* Instagram */
+.fa-instagram {
+    background: #125688;
+    color: white;
+  }
+
+/* Posting */
+#postingCard {
+    position: fixed;
+    right: 5%;
+    top: 50%;
+    width: 35%;
+}
+#postingCardBody .postingPrice small{
+    font-size: 12px;
+    margin-bottom: 0rem;
+}
+#postingCardBody p {
+    margin-bottom: 0rem;
+}
+
+#reqToBookBtn{
+    width: 100%;
+    background-color: rgb(161, 34, 55);
+}
+.reviewStars i {
+    margin: -10px;
+    color: #55ACEE;
+}
+
+
+
