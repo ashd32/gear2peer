@@ -6,5 +6,12 @@ module.exports = function (sequelize, DataTypes) {
         photoURL: DataTypes.STRING,
         reiID: DataTypes.STRING
     });
+    Product.associate=function(models){
+        Product.belongsTo(models.User, {
+            foreignKey: {
+                allowNull: false
+            }
+        })
+    }
     return Product;
 };

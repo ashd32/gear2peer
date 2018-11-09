@@ -37,6 +37,8 @@ class RestfulAPI {
         }
       })
       .then(function(data) {
+        console.log('1,2,3');
+        console.log(data);
         res.json(data);
       })
       .catch(function(err){
