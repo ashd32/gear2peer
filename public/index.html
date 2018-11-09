@@ -258,6 +258,7 @@
                     </div>
                 </div>
             </div>
+<<<<<<< HEAD
             <div style="height: 50px;"></div>
             <div class="row">
                 <div class="col-md-3">
@@ -323,6 +324,104 @@
   src="https://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
+=======
+            </li>
+            <!-- log in button -->
+            <li class="nav-item">
+                <a data-toggle="modal" href="#logInModal">Log In</a>
+            </li>
+            <!-- Log In Modal -->
+            <div class="modal fade" id="logInModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Log In</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="form-group">
+                                    <label for="logInEmail">Email address</label>
+                                    <input type="email" class="form-control" id="logInEmail" aria-describedby="emailHelp"
+                                        placeholder="Enter email">
+                                    <small id="emailHelp" class="form-text text-muted">We'll never share your email
+                                        with anyone else.</small>
+                                </div>
+                                <div class="form-group">
+                                    <label for="logInPassword">Password</label>
+                                    <input type="password" class="form-control" id="logInPassword" placeholder="Password">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button id="logInSubmit" type="button" class="btn btn-primary">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </ul>
+        <!-- row -->
+        <div class="row">
+            <div class="col-md-4">
+            </div>
+            <div class="col-md-4">
+                <!-- Main input form -->
+
+
+
+                <!--START of Michael's form -->
+                // Finding something to rent
+                <form>
+                    <input type="text" id="searchKeyWord" />
+                    <input type="text" id="searchLocation" />
+                    <a href="/api/availableGear"><input type="submit" id="searchSubmit" /></a>
+                </form>
+                // Putting something up to rent
+                <form>
+                    <input type="text" id="keyWord" />
+                    <input type="text" id="location" />
+                    <input type="submit" id="submit" />
+                </form>
+                <div id="searchDump"></div>
+                <!-- END of Michael's form -->
+
+
+
+
+                <div class="card">
+                    <div class="card-body">
+                        <form class="userInputForm">
+                            <div class="form-group">
+                                <label for="userInputLocation">Where:</label>
+                                <input type="location" class="form-control" id="userInputLocation" placeholder="Enter Location">
+                            </div>
+                            <div class="form-group">
+                                <label for="userInputCategory">Category:</label>
+                                <select id="userInputCategory" class="form-control">
+                                    <option>Default select</option>
+                                </select>
+                            </div>
+                            <button type="submit" id="userInputSubmit" class="btn btn-primary">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+<!-- //bootstrap jquery scripts -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+>>>>>>> ff84e27bad2c397ef046444923b8fe3b550a582b
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
     crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
