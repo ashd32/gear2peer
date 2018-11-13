@@ -45,6 +45,22 @@ html {
     background-size: cover;
     height: 600px;
   }
+  #userContainer { 
+    background: url(../images/daylight-environment-forest-459225.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 600px;
+  }
+  #userPhotoContainer { 
+    background: url(../images/adventure-alps-climb-314703.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 600px;
+  }
 .form-group{
     font-size: 24px;
 }
@@ -111,6 +127,12 @@ html {
 .reviewStars i {
     margin: -10px;
     color: #55ACEE;
+}
+#resultMap {
+    position: sticky;
+    right: 5%;
+    top: 15%;
+    width: 90%;
 }
 
 
