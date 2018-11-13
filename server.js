@@ -19,3 +19,13 @@ db.sequelize.sync().then(function() {
 });
 
 module.exports = app;
+
+
+// FORCES database to reseed upon every start...
+// db.sequelize.sync({force:true}).then(function() {
+//   app.listen(PORT, function() {
+//     console.log(`App listening on PORT ${PORT}`);
+//   });
+// });
+
+// module.exports = app;
