@@ -1,0 +1,24 @@
+{
+  "development": {
+    "username": "root",
+    "password": "ATL2CHIfly$",
+    "database": "gear2peerDB",
+    "host": "127.0.0.1",
+    "port": 3306,
+    "dialect": "mysql"
+  },
+  "test": {
+    "username": "root",
+    "password": "root",
+    "database": "gear2peerDB_test",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "root",
+    "password": "root",
+    "database": "gear2peerDB_production",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  }
+}
