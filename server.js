@@ -10,6 +10,7 @@ app.use(express.static("public"));
 
 
 require("./routes/api-routes.js")(app);
+require("./routes/html-routes.js")(app);
 
 
 db.sequelize.sync().then(function() {
