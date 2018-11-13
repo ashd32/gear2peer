@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- reset link -->
+    <link rel="stylesheet" href="css/reset.css">
+    <!-- bootstrap link -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway|Roboto" rel="stylesheet">
+    <!-- css link -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Home</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <!-- intro image -->
+        <div class="imageContainer">
+            <div class="row">
+                <div class="col-md-4"></div>
+                <div class="col-md-4">
+                    <a class="adventureButton" href="#navBar">START YOUR ADVENTURE</a>
+                </div>
+                <div class="col-md-4"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="gearTitle"><b> GEAR2PEER </b></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4"></div>
+                <div class="col-md-4">
+                    <p>Quisque in vehicula leo, ultricies venenatis massa. Ut sit amet libero blandit, blandit est sit
+                        amet, pretium enim. Fusce a ornare turpis. Vestibulum gravida lacus a dictum luctus. In nec
+                        rhoncus nisi, ac consectetur lacus. Nulla at porta tellus. Aenean suscipit vehicula tellus eu
+                        euismod.</p>
+                </div>
+                <div class="col-md-4"></div>
+            </div>
+        </div>
+        <!-- navbar -->
+        <nav class="navbar navbar-dark bg-dark">
+            <a id="logoImg" class="navbar-brand" href="./index.html">
+                <img src="./images/if_Mountain_172230.png" width="35" height="35" alt="logo">
+            </a>
+            <div id="navBar" class="navbar-nav">
+
+                <!-- lender button -->
+                <ul id="navBar" class="nav justify-content-end">
+                    <li class="nav-item nav-link">
+                        <a class="nav-item nav-link" id="lenderLink" data-toggle="modal" href="#lenderModal">Become
+                            Lender</a>
+                    </li>
+                    <!-- lender Modal -->
+                    <div class="modal fade" id="lenderModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Become a Lender</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="form-group">
+                                            <label for="lenderEmail">Email address</label>
+                                            <input type="email" class="form-control" id="lenderEmail" aria-describedby="emailHelp"
+                                                placeholder="Enter email">
+                                            <small id="emailHelp" class="form-text text-muted">We'll never share your
+                                                email
+                                                with anyone else.</small>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="lenderPassword">Password</label>
+                                            <input type="password" class="form-control" id="lenderPassword" placeholder="Password">
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <button id="lenderSubmit" type="button" class="btn btn-primary">Submit</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- sign up button -->
+                    <li class="nav-item nav-link" id="signUpLink">
+                        <a class="nav-item nav-link" data-toggle="modal" href="#signUpModal">Sign Up</a>
+                    </li>
+                    <!-- Sign Up Modal -->
+                    <div class="modal fade" id="signUpModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="signUpModalLabel">Sign Up</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="form-group">
+                                            <label for="signUpEmail">Email address</label>
+                                            <input type="email" class="form-control" id="signUpEmail" aria-describedby="emailHelp"
+                                                placeholder="Enter email">
+                                            <small id="emailHelp" class="form-text text-muted">We'll never share your
+                                                email
+                                                with anyone else.</small>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="signUpPassword">Password</label>
+                                            <input type="password" class="form-control" id="signUpPassword" placeholder="Password">
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <button id="signInSubmit" type="button" class="btn btn-primary">Submit</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </li>
+                    <!-- log in button -->
+                    <li class="nav-item nav-link">
+                        <a class="nav-item nav-link" data-toggle="modal" href="#logInModal">Log In</a>
+                    </li>
+                    <!-- Log In Modal -->
+                    <div class="modal fade" id="logInModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Log In</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="form-group">
+                                            <label for="logInEmail">Email address</label>
+                                            <input type="email" class="form-control" id="logInEmail" aria-describedby="emailHelp"
+                                                placeholder="Enter email">
+                                            <small id="emailHelp" class="form-text text-muted">We'll never share your
+                                                email
+                                                with anyone else.</small>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="logInPassword">Password</label>
+                                            <input type="password" class="form-control" id="logInPassword" placeholder="Password">
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <button id="logInSubmit" type="button" class="btn btn-primary">Submit</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+        </nav>
+        <!-- space div -->
+        <div id="inputContainer">
+            <div class="row">
+                <div id="spaceDiv" class=col-md-12></div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                </div>
+                <div class="col-md-4">
+                    <!-- Main input form -->
+
+<!-- START OF KEYWORD FORM -->
+                    <form>
+                        <input type="text" id="searchKeyWord" />
+                        <a href="/results"><input type="submit" id="searchSubmit" /></a>
+                    </form>
+                       
+                    <div id="searchDump"></div>
+<!-- END OF KEYWORD FORM -->
+
+
+                    <div class="card">
+                        <div class="card-body">
+                            <form class="userInputForm">
+                                <h2>Lets Begin..</h2>
+                                <div class="form-group">
+                                    <label for="userInputLocation">Where's the adventure</label>
+                                    <input type="location" class="form-control" id="userInputLocation" placeholder="Enter Location">
+                                </div>
+                                <div class="form-group">
+                                    <label for="userInputCategory">What would you like to do?</label>
+                                    <select id="userInputCategory" class="form-control">
+                                        <option>Default select</option>
+                                        <option>Backpacking</option>
+                                        <option>Biking</option>
+                                        <option>Campers</option>
+                                        <option>Camping</option>
+                                        <option>Fishing</option>
+                                        <option>Rock Climbing</option>
+                                        <option>Watersports</option>
+                                        <option>Wintersports</option>
+                                    </select>
+                                </div>
+                                <button type="submit" id="userInputSubmit" class="btn btn-primary">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+            </div>
+        </div>
+        <div id="categoryContainer">
+            <br>
+            <div class="row">
+                <div class="col-md-12">
+                    <h3>Categories</h3>
+                    <p>Find your perfect adventure..</p>
+                    <hr>
+                </div>
+            </div>
+            <!-- category gallery -->
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card" style="width: 13rem;">
+                        <img class="card-img-top" src="images/activity-adult-bait-294674.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h4 class="card-text">Fishing</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card" style="width: 13rem;">
+                        <img class="card-img-top" src="images/adventure-backpack-climb-868097 (1).jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h4 class="card-text">BackPacking</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card" style="width: 13rem;">
+                        <img class="card-img-top" src="images/activity-adult-adventure-1376960.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h4 class="card-text">Camping</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card" style="width: 13rem;">
+                        <img class="card-img-top" src="./images/bicycle-bike-brakes-987571.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h4 class="card-text">Biking</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="height: 50px;"></div>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card" style="width: 13rem;">
+                        <img class="card-img-top" src="./images/action-adult-adventure-298007.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h4 class="card-text">Winter Sports</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card" style="width: 13rem;">
+                        <img class="card-img-top" src="images/accomplishment-action-adventure-461593.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h4 class="card-text">Rock Climbing</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card" style="width: 13rem;">
+                        <img class="card-img-top" src="./images/kajak-kayak-lake-6529.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h4 class="card-text">Water Sports</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card" style="width: 13rem;">
+                        <img class="card-img-top" src="images/automobile-campervan-camping-587976.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h4 class="card-text">Campers</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    </div>
+    <!-- about us -->
+    <!-- reviews -->
+    <!-- footer -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="collapse navbar-collapse" id="footer">
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                    <a href="#" class="fa fa-facebook"></a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="fa fa-twitter"></a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="fa fa-instagram"></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</body>
+
+<!-- //bootstrap jquery scripts -->
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+
+<script src="./js/app.js"></script>
+
+</html>
