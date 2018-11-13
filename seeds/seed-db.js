@@ -5,6 +5,43 @@ const db = require('../models');
 // Syncing our sequelize models 
 // =============================================================
 
+const User = [
+    {
+        name: 'Michael Toplisek',
+        email: 'mtoplisek@gmail.com',
+        phone: '4044044400',
+        address: '1800 memory lane',
+        city: 'atlanta',
+        state: 'georgia',
+        zip: '30311',
+        showaddress: false,
+        username: 'mikenator20',
+        password: 'blagoodle'
+    }, {
+        name: 'Summer Smith',
+        email: 'galactictraveler@gmail.com',
+        phone: '1000000000',
+        address: '281 peachtree street',
+        city: 'atlanta',
+        state: 'georgia',
+        zip: '30311',
+        showaddress: false,
+        username: 'sumsum1',
+        password: 'oogleschnoogle'
+    }, {
+        name: 'Bobby Mcghee',
+        email: 'mcghee@gmail.com',
+        phone: '1012023300',
+        address: '358 piedmont avenue',
+        city: 'atlanta',
+        state: 'georgia',
+        zip: '30311',
+        showaddress: false,
+        username: 'janisjoplin',
+        password: 'songnamedafterme'
+    }
+];
+
 const Product = [
     {
         UserId: 2,
@@ -87,7 +124,7 @@ const Product = [
         reiID: 736945,
         isAvailable: true
     },
-]
+];
 
 db.sequelize.sync({ force: true }).then(function () {
     db.Product.bulkCreate(items)

@@ -8,12 +8,12 @@ module.exports = function (sequelize, DataTypes) {
         reiID: DataTypes.STRING,
         isAvailable: DataTypes.BOOLEAN
     });
-    // Product.associate=function(models){
-    //     Product.belongsTo(models.User, {
-    //         foreignKey: {
-    //             allowNull: false
-    //         }
-    //     })
-    // }
+    Product.associate=function(models){
+        Product.belongsTo(models.User, {
+            foreignKey: {
+                allowNull: false
+            }
+        });
+    };
     return Product;
 };
