@@ -61,6 +61,14 @@ html {
     background-size: cover;
     height: 600px;
   }
+  #profinputContainer { 
+    background: url(../images/clouds-hd-wallpaper-hills-63324.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 600px;
+  }
 .form-group{
     font-size: 24px;
 }
