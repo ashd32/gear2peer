@@ -45,6 +45,8 @@ html {
     background-size: cover;
     height: 600px;
   }
+<<<<<<< HEAD
+=======
   #userContainer { 
     background: url(../images/daylight-environment-forest-459225.jpg) no-repeat center center fixed; 
     -webkit-background-size: cover;
@@ -69,6 +71,7 @@ html {
     background-size: cover;
     height: 600px;
   }
+>>>>>>> ce34dd5f67b97ccb63505e97e86eab70fe814b3b
 .form-group{
     font-size: 24px;
 }
@@ -136,12 +139,15 @@ html {
     margin: -10px;
     color: #55ACEE;
 }
+<<<<<<< HEAD
+=======
 #resultMap {
     position: sticky;
     right: 5%;
     top: 15%;
     width: 90%;
 }
+>>>>>>> ce34dd5f67b97ccb63505e97e86eab70fe814b3b
 
 
 
