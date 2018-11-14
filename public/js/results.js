@@ -1,35 +1,33 @@
-// render function to display data
-const render = function (gear) {
-  for(let i = 0; i < gear.length; i++){
-      $('#searchDump').append(`<h1>${gear[i].product_name}</h1><h4>${gear[i].id}</h4>`);
-  };
-};
-// function that captures user input to search for gear
-const searchGear = function (event) {
-  event.preventDefault();
-  const product_name = $('#searchKeyWord').val()
+(function () {
+    // here we parse the the window replace from app.js then create a variable called search term which parses the url
+    // and saves the term after ?q= which is the user input which lets us make the api call for the data
+    const searchParams = (new URL(window.location)).searchParams;
+    const searchTerm = searchParams.get("q") || "";
 
+    // render function to display data
+    const render = function (gear) {
+        for (let i = 0; i < gear.length; i++) {
+            $('#resultsPhotoGal').append(`<div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="${gear[i].photoURL}" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">${gear[i].name}</h5>
+                <p class="card-text"><h6>${gear[i].price}</h6></p>
 
-  $.get(`/api/products/${product_name}`)
-  .then(function (gear) {
-      console.log(gear);
-      render(gear);
-  })
-};
-// respond to button click
-$('#searchSubmit').on('click', searchGear);
-// function to post new gear to products table
-const postGear = function (e) {
-  e.preventDefault();
-  const newGear = {
-      name: $('#keyWord').val(),
-      location: $('#location').val()
-      // other fields which I dont know yet
-  };
+            </div>`);
+        };
+    };
 
-  $.post('/api/products', newGear)
-  .then(function (gear) {   
-  });
-};
+    const searchGear = function () {
+        // took out event
+        console.log('i am here!')
 
-$('#submit').on('click', postGear);
+        //AP: $.get doesn't work with the slim version of jQuery in html in line 193
+        $.get(`/api/products/${searchTerm}`)
+            .then(function (gear) {
+                console.log(gear);
+                render(gear);
+            })
+    };
+
+    searchGear();
+})();
