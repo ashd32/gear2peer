@@ -8,7 +8,14 @@ class RestfulAPI {
 
   findAll() {
     this.app.get(`/api/${this.resource}`, (req, res) => {
-      this.model.findAll({})
+      this.model.findAll({
+        include: [{
+          model: this.association,
+          // where: {
+          //   id: this.model.UserId
+          // }
+        }]
+      })
         .then(function (data) {
           res.json(data);
         })

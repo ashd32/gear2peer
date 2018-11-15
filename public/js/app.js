@@ -11,5 +11,5 @@ $(document).ready(function () { //AP: Wrapped the entire app.js in document.read
 
     };
 
-    $('#userInputSubmit').on('click', searchGear);
+    $('#searchSubmit').on('click', searchGear);
 });
