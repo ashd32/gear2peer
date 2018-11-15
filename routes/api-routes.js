@@ -11,17 +11,12 @@ module.exports = function (app) {
   products.delete('id');
   products.update('id');
 
+
   app.get("/scrape-rei", function (req, res) {
     scrapRei(req.query.url).then(function (details) {
       res.json(details);
     });
   });
 
-//   const users = new RestfulAPI('users', app, models.User);
-//   users.findAll();
-//   users.find('id');
-//   users.create();
-//   users.delete('id');
-//   users.update('id');
-// console.log(users.findAll);
+
 };

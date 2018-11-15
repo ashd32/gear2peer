@@ -180,13 +180,29 @@
                 </div>
                 <div class="col-md-4">
                     <!-- Main input form -->
+
+                    <!-- START OF KEYWORD FORM -->
+                    <!-- <form>
+                        <input type="text" id="searchKeyWord" />
+                        <input type="submit" id="searchSubmit" />
+                    </form>
+                       
+                    <div id="searchDump"></div> -->
+                    <!-- END OF KEYWORD FORM -->
+
+
                     <div class="card">
                         <div class="card-body">
                             <form class="userInputForm">
                                 <h2>Lets Begin..</h2>
                                 <div class="form-group">
                                     <label for="userInputLocation">Where's the adventure</label>
-                                    <input type="location" class="form-control" id="userInputLocation" placeholder="Enter Location">
+                                    <select id="userInputLocation" class="form-control">
+                                        <option value="default">select</option>
+                                        <option value="atlanta">Atlanta, GA</option>
+                                        <option value="juneau">Juneau, AK</option>
+                                        <option value="san francisco">San Francisco, CA</option>
+                                    </select>
                                 </div>
                                 <div class="form-group">
                                     <label for="userInputCategory">What would you like to do?</label>
