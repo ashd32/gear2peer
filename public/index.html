@@ -38,10 +38,7 @@
             <div class="row">
                 <div class="col-md-4"></div>
                 <div class="col-md-4">
-                    <p>Quisque in vehicula leo, ultricies venenatis massa. Ut sit amet libero blandit, blandit est sit
-                        amet, pretium enim. Fusce a ornare turpis. Vestibulum gravida lacus a dictum luctus. In nec
-                        rhoncus nisi, ac consectetur lacus. Nulla at porta tellus. Aenean suscipit vehicula tellus eu
-                        euismod.</p>
+                    <p>We are a community based rental service for outdoor equipment. Rent or lend gear from your peers, find the best local spots for adventure and save money doing it.</p><br><p>Let's get started!</p>
                 </div>
                 <div class="col-md-4"></div>
             </div>
@@ -56,7 +53,7 @@
                 <!-- lender button -->
                 <ul id="navBar" class="nav justify-content-end">
                     <li class="nav-item nav-link">
-                        <a class="nav-item nav-link" href = "user.html">Become
+                        <a class="nav-item nav-link" href="user.html">Become
                             Lender</a>
                     </li>
                     <!-- lender Modal -->
@@ -184,14 +181,14 @@
                 <div class="col-md-4">
                     <!-- Main input form -->
 
-<!-- START OF KEYWORD FORM -->
+                    <!-- START OF KEYWORD FORM -->
                     <!-- <form>
                         <input type="text" id="searchKeyWord" />
                         <input type="submit" id="searchSubmit" />
                     </form>
                        
                     <div id="searchDump"></div> -->
-<!-- END OF KEYWORD FORM -->
+                    <!-- END OF KEYWORD FORM -->
 
 
                     <div class="card">
@@ -200,11 +197,16 @@
                                 <h2>Lets Begin..</h2>
                                 <div class="form-group">
                                     <label for="userInputLocation">Where's the adventure</label>
-                                    <input type="location" class="form-control" id="userInputLocation" placeholder="Enter Location">
+                                    <select id="userInputLocation" class="form-control">
+                                        <option value="default">select</option>
+                                        <option value="atlanta">Atlanta, GA</option>
+                                        <option value="juneau">Juneau, AK</option>
+                                        <option value="san francisco">San Francisco, CA</option>
+                                    </select>
                                 </div>
                                 <div class="form-group">
                                     <label for="userInputCategory">What would you like to do?</label>
-                                    <select id="userInputCategory" class="form-control">
+                                    <select id="searchSubmit" class="form-control">
                                         <option value="default">select</option>
                                         <option value="backpacking">Backpacking</option>
                                         <option value="biking">Biking</option>
@@ -215,10 +217,10 @@
                                         <option value="watersports">Watersports</option>
                                         <option value="wintersports">Wintersports</option>
                                     </select>
+                                    <a href = "#categoryContainer" style="font-size: 12px; color: gray; line-height: normal;">See Categories</a>
                                 </div>
-                                <button type="submit" id="userInputSubmit" class="btn btn-primary">Submit</button>
+                                <button type="submit" id="searchSubmit" class="btn btn-primary">Submit</button>
                             </form>
-                            <a href="/user">Click here to post an item for rent</a>
                         </div>
                     </div>
                 </div>
@@ -239,33 +241,33 @@
             <div class="row">
                 <div class="col-md-3">
                     <div class="card" style="width: 13rem;">
-                        <img class="card-img-top" src="images/activity-adult-bait-294674.jpg" alt="Card image cap">
+                        <a href="./products.html#fishing"><img class="card-img-top" src="images/activity-adult-bait-294674.jpg" alt="Card image cap">
                         <div class="card-body">
-                            <h4 class="card-text">Fishing</h4>
+                            <h4 class="card-text">Fishing</h4></a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="card" style="width: 13rem;">
-                        <img class="card-img-top" src="images/adventure-backpack-climb-868097 (1).jpg" alt="Card image cap">
+                        <a href="./products.html#backpacking"><img class="card-img-top" src="images/adventure-backpack-climb-868097 (1).jpg" alt="Card image cap">
                         <div class="card-body">
-                            <h4 class="card-text">BackPacking</h4>
+                            <h4 class="card-text">BackPacking</h4></a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="card" style="width: 13rem;">
-                        <img class="card-img-top" src="images/activity-adult-adventure-1376960.jpg" alt="Card image cap">
+                        <a href="./products.html#camping"><img class="card-img-top" src="images/activity-adult-adventure-1376960.jpg" alt="Card image cap">
                         <div class="card-body">
-                            <h4 class="card-text">Camping</h4>
+                            <h4 class="card-text">Camping</h4></a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="card" style="width: 13rem;">
-                        <img class="card-img-top" src="./images/bicycle-bike-brakes-987571.jpg" alt="Card image cap">
+                        <a href="./products.html#biking"><img class="card-img-top" src="./images/bicycle-bike-brakes-987571.jpg" alt="Card image cap">
                         <div class="card-body">
-                            <h4 class="card-text">Biking</h4>
+                            <h4 class="card-text">Biking</h4></a>
                         </div>
                     </div>
                 </div>
@@ -274,33 +276,33 @@
             <div class="row">
                 <div class="col-md-3">
                     <div class="card" style="width: 13rem;">
-                        <img class="card-img-top" src="./images/action-adult-adventure-298007.jpg" alt="Card image cap">
+                        <a href="./products.html#winterSports"><img class="card-img-top" src="./images/action-adult-adventure-298007.jpg" alt="Card image cap">
                         <div class="card-body">
-                            <h4 class="card-text">Winter Sports</h4>
+                            <h4 class="card-text">Winter Sports</h4></a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="card" style="width: 13rem;">
-                        <img class="card-img-top" src="images/accomplishment-action-adventure-461593.jpg" alt="Card image cap">
+                        <a href="./products.html#rockClimbing"><img class="card-img-top" src="images/accomplishment-action-adventure-461593.jpg" alt="Card image cap">
                         <div class="card-body">
-                            <h4 class="card-text">Rock Climbing</h4>
+                            <h4 class="card-text">Rock Climbing</h4></a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="card" style="width: 13rem;">
-                        <img class="card-img-top" src="./images/kajak-kayak-lake-6529.jpg" alt="Card image cap">
+                        <a href="./products.html#waterSports"><img class="card-img-top" src="./images/kajak-kayak-lake-6529.jpg" alt="Card image cap">
                         <div class="card-body">
-                            <h4 class="card-text">Water Sports</h4>
+                            <h4 class="card-text">Water Sports</h4></a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="card" style="width: 13rem;">
-                        <img class="card-img-top" src="images/automobile-campervan-camping-587976.jpg" alt="Card image cap">
+                        <a href="./products.html#campers"><img class="card-img-top" src="images/automobile-campervan-camping-587976.jpg" alt="Card image cap">
                         <div class="card-body">
-                            <h4 class="card-text">Campers</h4>
+                            <h4 class="card-text">Campers</h4></a>
                         </div>
                     </div>
                 </div>
@@ -331,10 +333,8 @@
 </body>
 
 <!-- //bootstrap jquery scripts -->
-<script
-  src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
     crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"

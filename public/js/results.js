@@ -3,7 +3,10 @@
     // and saves the term after ?q= which is the user input which lets us make the api call for the data
     const searchParams = (new URL(window.location)).searchParams;
     const searchTerm = searchParams.get("category") || "";
+<<<<<<< HEAD
     const searchLocation = searchParams.get("location") || "";
+=======
+>>>>>>> 2b53422e7b04cc04e7312d0be3c5f753b1d85064
 
     // render function to display data
     const render = function (gear) {
@@ -25,7 +28,12 @@
                     </div>
                 </div>
             </div>
+<<<<<<< HEAD
     </div><button><hr><br>`);
+=======
+    </div><hr><br>`);
+
+>>>>>>> 2b53422e7b04cc04e7312d0be3c5f753b1d85064
         };
     };
 
