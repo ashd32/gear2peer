@@ -16,5 +16,4 @@ module.exports = function (app) {
   users.create();
   users.delete('id');
   users.update('id');
-console.log(users.findAll);
 };
