@@ -24,7 +24,6 @@
                                 <div id="cardText" class="card-text"><h3>Contact: ${gear.User.phone}</h3></div>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
@@ -77,6 +76,7 @@ const displayItem = function (e) {
     $('#resultsPhotoGal').append(`<h1>${thisName}</h1><br /><h3>${thisPrice}</h3>`)
 }
 
-$('#resultsPhotoGal').on('click', 'button', displayItem)
+//      $('#resultsPhotoGal').on('click', 'button', displayItem)
+//      $('#item').on('click','button', displayItem)
 
 }) ();
