@@ -11,9 +11,11 @@
   "author": "group-project",
   "license": "ISC",
   "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
     "express": "^4.16.4",
     "mysql": "^2.16.0",
     "mysql2": "^1.6.4",
+    "puppeteer": "^1.10.0",
     "sequelize": "^4.41.2"
   }
 }
