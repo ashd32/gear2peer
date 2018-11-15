@@ -10,11 +10,11 @@ module.exports = function (app) {
   products.delete('id');
   products.update('id');
 
-//   const users = new RestfulAPI('users', app, models.User);
-//   users.findAll();
-//   users.find('id');
-//   users.create();
-//   users.delete('id');
-//   users.update('id');
-// console.log(users.findAll);
+  const users = new RestfulAPI('users', app, models.User);
+  users.findAll();
+  users.find('id');
+  users.create();
+  users.delete('id');
+  users.update('id');
+console.log(users.findAll);
 };
