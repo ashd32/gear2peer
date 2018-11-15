@@ -19,7 +19,6 @@
                                 <div id="cardText" class="card-text"><h3>$${gear[i].price}</h3></div>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
@@ -55,6 +54,6 @@ const searchGear = function () {
          $('#resultsPhotoGal').append(`<h1>${thisName}</h1><br /><h3>${thisPrice}</h3>`)
      }
 
-     $('#resultsPhotoGal').on('click', 'button', displayItem)
+     $('#item').on('click','button', displayItem)
 
 })();
