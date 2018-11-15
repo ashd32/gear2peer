@@ -6,10 +6,7 @@ module.exports = async (url) => {
     const page = await browser.newPage();
     await page.goto(url);
     const html = await page.content();
-    await page.screenshot({
-        path: 'rei.png',
-        fullPage: true
-    });
+
     const $ = cheerio.load(html);
     var title = $('h1.product-information-title').text().trim().replace(/\s{2,}/, " ");
     console.log(title);
