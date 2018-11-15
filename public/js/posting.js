@@ -3,12 +3,12 @@ const userLocation = $('#disabledInput').val()
 const postingCategory = $('#userUploadCategory').val()
 
 const newProduct = {
-  userId: ,
-  name: ,
-  category: ,
-  price: ,
-  photoURL: ,
-  reiId: ,
+  userId:'' ,
+  name: '' ,
+  category: '' ,
+  price: '' ,
+  photoURL: '',
+  reiId:'' ,
   isAvailable: 'true'
 }
 
