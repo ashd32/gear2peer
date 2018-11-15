@@ -38,10 +38,11 @@
             $.get('/api/products')
                 .then(function (gear) {
                     for (let i = 0; i < gear.length; i++) {
-                        if (gear[i].User.city === searchLocation)
+                        if (gear[i].User.city === searchLocation) {
                         //console working but appending all of the data
                         console.log(gear[i]);
                         render(gear[i]);
+                        }
                     }
                 })
 
@@ -51,8 +52,9 @@
                 .then(function (gear) {
                     console.log(gear);
                     for (let i = 0; i < gear.length; i++) {
-                        if (gear[i].User.city === searchLocation)
+                        if (gear[i].User.city === searchLocation) {
                             render(gear[i])
+                        }
                     }
                 })
         }
