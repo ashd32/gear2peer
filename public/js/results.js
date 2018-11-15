@@ -2,7 +2,7 @@
     // here we parse the the window replace from app.js then create a variable called search term which parses the url
     // and saves the term after ?q= which is the user input which lets us make the api call for the data
     const searchParams = (new URL(window.location)).searchParams;
-    const searchTerm = searchParams.get("q") || "";
+    const searchTerm = searchParams.get("category") || "";
 
     // render function to display data
     const render = function (gear) {
@@ -25,19 +25,6 @@
             </div>
     </div><hr><br>`);
 
-
-                // `<img src=${gear[i].photoURL} style = "width: 200px; height: 200px";>`);
-            // $('#cardTitle').append(`<h4>${gear[i].name}</h4>`);
-            // $('#cardText').append(`<h3>$${gear[i].price}</h3>`);
-
-
-            //     `<div class="card" style="width: 18rem;">
-            // <img class="card-img-top" src="${gear[i].photoURL}" alt="Card image cap">
-            // <div class="card-body">
-            //     <h5 class="card-title">${gear[i].name}</h5>
-            //     <p class="card-text"><h6>${gear[i].price}</h6></p>
-
-            // </div>`);
         };
     };
 
