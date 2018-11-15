@@ -16,4 +16,15 @@ const postGear = function (e) {
   });
 }
 
+const rei = function (e) {
+  e.preventDefault();
+  const productUrl = $('#reiID').val();
+  $.get(`/scrape-rei?url=${productUrl}`, function (response) {
+    console.log(response);
+    $('#uploadName').val(response.title);
+    $('#uploadPhoto').val(response.images[0]);
+  });
+}
+
+$('#reiSubmit').on('click', rei);
 $('#userUploadSubmit').on('click', postGear)
