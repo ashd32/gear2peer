@@ -20,6 +20,8 @@
                             <div class="card-block px-3">
                                 <div id="cardTitle" class="card-title"><h2>${gear.name}</h2></div>
                                 <div id="cardText" class="card-text"><h3>$${gear.price}</h3></div>
+                                <div id="cardText" class="card-text"><h3>City: ${gear.User.city}</h3></div>
+                                <div id="cardText" class="card-text"><h3>Contact: ${gear.User.phone}</h3></div>
                             </div>
                         </div>
 
