@@ -53,5 +53,21 @@ const searchGear = function () {
         })
 };
 
-searchGear();
-}) ();
+    searchGear();
+
+     const displayItem = function (e) {
+         e.preventDefault();
+         const thisName = $(this).data('name')
+         const thisPrice = $(this).data('price')
+
+         console.log(thisName)
+         console.log(thisPrice)
+
+         $('#resultsPhotoGal').empty();
+
+         $('#resultsPhotoGal').append(`<h1>${thisName}</h1><br /><h3>${thisPrice}</h3>`)
+     }
+
+     $('#resultsPhotoGal').on('click', 'button', displayItem)
+
+})();
