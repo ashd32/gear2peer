@@ -2,12 +2,14 @@
     // here we parse the the window replace from app.js then create a variable called search term which parses the url
     // and saves the term after ?q= which is the user input which lets us make the api call for the data
     const searchParams = (new URL(window.location)).searchParams;
-    const searchTerm = searchParams.get("q") || "";
+    const searchTerm = searchParams.get("category") || "";
+    const searchLocation = searchParams.get("location") || "";
 
     // render function to display data
     const render = function (gear) {
         for (let i = 0; i < gear.length; i++) {
-            $('#resultCard').append(`<div class = "col-md-12" >
+            $('#resultCard').append(`<button data-name="${gear[i].name}"
+            data-price="${gear[i].price}"><div class = "col-md-12" >
             <div class="container py-3">
                 <div class="card">
                     <div class="row ">
@@ -23,21 +25,7 @@
                     </div>
                 </div>
             </div>
-    </div><hr><br>`);
-
-
-                // `<img src=${gear[i].photoURL} style = "width: 200px; height: 200px";>`);
-            // $('#cardTitle').append(`<h4>${gear[i].name}</h4>`);
-            // $('#cardText').append(`<h3>$${gear[i].price}</h3>`);
-
-
-            //     `<div class="card" style="width: 18rem;">
-            // <img class="card-img-top" src="${gear[i].photoURL}" alt="Card image cap">
-            // <div class="card-body">
-            //     <h5 class="card-title">${gear[i].name}</h5>
-            //     <p class="card-text"><h6>${gear[i].price}</h6></p>
-
-            // </div>`);
+    </div><button><hr><br>`);
         };
     };
 
@@ -45,12 +33,21 @@ const searchGear = function () {
     // took out event
     console.log('i am here!')
 
-    //AP: $.get doesn't work with the slim version of jQuery in html in line 193
+    if(searchTerm === 'default'){
+
+        $.get('/api/products')
+        .then(function(gear) {
+            render(gear)
+        })
+
+    }else {
+
     $.get(`/api/products/${searchTerm}`)
         .then(function (gear) {
             console.log(gear);
             render(gear);
         })
+    }
 };
 
     searchGear();

@@ -4,7 +4,7 @@ const scrapRei = require("../utils/scrape-rei.js");
 
 module.exports = function (app) {
   
-  const products = new RestfulAPI('products', app, models.Product);
+  const products = new RestfulAPI('products', app, models.Product, models.User);
   products.findAll();
   products.find('category');
   products.create();
