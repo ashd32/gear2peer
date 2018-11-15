@@ -1,5 +1,6 @@
 const RestfulAPI = require('./RestClass');
 const models = require('../models');
+const scrapRei = require("../utils/scrape-rei.js");
 
 module.exports = function (app) {
   
@@ -9,6 +10,12 @@ module.exports = function (app) {
   products.create();
   products.delete('id');
   products.update('id');
+
+  app.get("/scrape-rei", function (req, res) {
+    scrapRei(req.query.url).then(function (details) {
+      res.json(details);
+    });
+  });
 
 //   const users = new RestfulAPI('users', app, models.User);
 //   users.findAll();
