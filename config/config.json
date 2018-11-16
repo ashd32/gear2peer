@@ -1,9 +1,9 @@
 {
   "development": {
-    "username": "cw9iyvdeapzxqjum",
-    "password": "hysm773i5agos2yl",
-    "database": "kfwrsow2viryabvm",
-    "host": "b4e9xxkxnpu2v96i.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+    "username": "root",
+    "password": "Morty2047!",
+    "database": "gear2peerDB",
+    "host": "localhost",
     "port": 3306,
     "dialect": "mysql"
   },
