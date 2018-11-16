@@ -6,8 +6,10 @@
 
     // render function to display data
     const render = function (gear) {
-        for (let i = 0; i < gear.length; i++) {
-            $('#resultCard').append(`<div class = "col-md-12" >
+
+            $('#resultCard').append(`< data-name="${gear.name}"
+            data-price="${gear.price}"><div class = "col-md-12" >
+
             <div class="container py-3">
                 <div class="card">
                     <div class="row ">
@@ -25,12 +27,13 @@
             </div>
     </div><hr><br>`);
 
+    };
+
+
         };
     };
 
 const searchGear = function () {
-    // took out event
-    console.log('i am here!')
 
     $.get(`/api/products/${searchTerm}`)
         .then(function (gear) {

@@ -20,17 +20,103 @@
 <body>
     <div class="container-fluid">
         <!-- navbar -->
-        <nav class="navbar navbar-light bg-light" id="navBar">
-            <a id="logoImg" class="navbar-brand" href="/">
+        <nav class="navbar navbar-dark bg-dark">
+            <a id="logoImg" class="navbar-brand" href="./index.html">
                 <img src="./images/if_Mountain_172230.png" width="35" height="35" alt="logo">
             </a>
-            <form class="form-inline">
-                <input id=searchInput class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button id="searchBtn" type="button" class="btn btn-default">
-                    <i class="fa fa-search"></i>
-                </button>
-            </form>
+            <div id="navBar" class="navbar-nav">
+
+                <!-- lender button -->
+                <ul id="navBar" class="nav justify-content-end">
+                    <li class="nav-item nav-link">
+                        <a class="nav-item nav-link" href="products.html">All Products</a>
+                    </li>
+                    <li class="nav-item nav-link">
+                        <a class="nav-item nav-link" href="user.html">Become
+                            Lender</a>
+                    </li>
+                    
+                    <!-- sign up button -->
+                    <li class="nav-item nav-link" id="signUpLink">
+                        <a class="nav-item nav-link" data-toggle="modal" href="#signUpModal">Sign Up</a>
+                    </li>
+                    <!-- Sign Up Modal -->
+                    <div class="modal fade" id="signUpModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="signUpModalLabel">Sign Up</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="form-group">
+                                            <label for="signUpEmail">Email address</label>
+                                            <input type="email" class="form-control" id="signUpEmail" aria-describedby="emailHelp"
+                                                placeholder="Enter email">
+                                            <small id="emailHelp" class="form-text text-muted">We'll never share your
+                                                email
+                                                with anyone else.</small>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="signUpPassword">Password</label>
+                                            <input type="password" class="form-control" id="signUpPassword" placeholder="Password">
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <button id="signInSubmit" type="button" class="btn btn-primary">Submit</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </li>
+                    <!-- log in button -->
+                    <li class="nav-item nav-link">
+                        <a class="nav-item nav-link" data-toggle="modal" href="#logInModal">Log In</a>
+                    </li>
+                    <!-- Log In Modal -->
+                    <div class="modal fade" id="logInModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Log In</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="form-group">
+                                            <label for="logInEmail">Email address</label>
+                                            <input type="email" class="form-control" id="logInEmail" aria-describedby="emailHelp"
+                                                placeholder="Enter email">
+                                            <small id="emailHelp" class="form-text text-muted">We'll never share your
+                                                email
+                                                with anyone else.</small>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="logInPassword">Password</label>
+                                            <input type="password" class="form-control" id="logInPassword" placeholder="Password">
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <button id="logInSubmit" type="button" class="btn btn-primary">Submit</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </ul>
+            </div>
         </nav>
+
         <!-- photo gallery -->
         <br><h2 id = "backpacking">Backpacking</h2><br>
          <div class="row" id="resultsPhotoGal">
