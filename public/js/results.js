@@ -9,7 +9,7 @@
 
     // render function to display data
     const render = function (gear) {
-            $('#resultCard').append(`<button data-name="${gear.name}"
+            $('#resultCard').append(`< data-name="${gear.name}"
             data-price="${gear.price}"><div class = "col-md-12" >
             <div class="container py-3">
                 <div class="card">
@@ -27,7 +27,7 @@
                     </div>
                 </div>
             </div>
-    </div><button><hr><br>`);
+    </div><hr><br>`);
     };
 
     const searchGear = function (searchTerm, searchLocation) {
