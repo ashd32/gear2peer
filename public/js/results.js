@@ -36,6 +36,15 @@
 
         if (searchTerm === 'default') {
 
+          
+    $.get(`/api/products/${searchTerm}`)
+        .then(function (gear) {
+            $("#spinner").hide();
+            console.log(gear);
+            render(gear);
+        })
+};
+
             $.get('/api/products')
                 .then(function (gear) {
                     for (let i = 0; i < gear.length; i++) {
@@ -60,6 +69,7 @@
                 })
         }
     };
+
 
 searchGear(searchTerm, searchLocation);
 
