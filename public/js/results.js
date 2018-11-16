@@ -32,9 +32,9 @@ const searchGear = function () {
     // took out event
     console.log('i am here!')
 
-    //AP: $.get doesn't work with the slim version of jQuery in html in line 193
     $.get(`/api/products/${searchTerm}`)
         .then(function (gear) {
+            $("#spinner").hide();
             console.log(gear);
             render(gear);
         })
