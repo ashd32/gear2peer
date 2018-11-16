@@ -20,395 +20,215 @@
 <body>
     <div class="container-fluid">
         <!-- navbar -->
-        <nav class="navbar navbar-dark bg-dark">
-            <a id="logoImg" class="navbar-brand" href="./index.html">
+        <nav class="navbar navbar-light bg-light" id="navBar">
+            <a id="logoImg" class="navbar-brand" href="/">
                 <img src="./images/if_Mountain_172230.png" width="35" height="35" alt="logo">
             </a>
-            <div id="navBar" class="navbar-nav">
-
-                <!-- lender button -->
-                <ul id="navBar" class="nav justify-content-end">
-                    <li class="nav-item nav-link">
-                        <a class="nav-item nav-link" href="products.html">All Products</a>
-                    </li>
-                    <li class="nav-item nav-link">
-                        <a class="nav-item nav-link" href="user.html">Become
-                            Lender</a>
-                    </li>
-                    
-                    <!-- sign up button -->
-                    <li class="nav-item nav-link" id="signUpLink">
-                        <a class="nav-item nav-link" data-toggle="modal" href="#signUpModal">Sign Up</a>
-                    </li>
-                    <!-- Sign Up Modal -->
-                    <div class="modal fade" id="signUpModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-                        aria-hidden="true">
-                        <div class="modal-dialog" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="signUpModalLabel">Sign Up</h5>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                </div>
-                                <div class="modal-body">
-                                    <form>
-                                        <div class="form-group">
-                                            <label for="signUpEmail">Email address</label>
-                                            <input type="email" class="form-control" id="signUpEmail" aria-describedby="emailHelp"
-                                                placeholder="Enter email">
-                                            <small id="emailHelp" class="form-text text-muted">We'll never share your
-                                                email
-                                                with anyone else.</small>
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="signUpPassword">Password</label>
-                                            <input type="password" class="form-control" id="signUpPassword" placeholder="Password">
-                                        </div>
-                                    </form>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                    <button id="signInSubmit" type="button" class="btn btn-primary">Submit</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    </li>
-                    <!-- log in button -->
-                    <li class="nav-item nav-link">
-                        <a class="nav-item nav-link" data-toggle="modal" href="#logInModal">Log In</a>
-                    </li>
-                    <!-- Log In Modal -->
-                    <div class="modal fade" id="logInModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-                        aria-hidden="true">
-                        <div class="modal-dialog" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalLabel">Log In</h5>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                </div>
-                                <div class="modal-body">
-                                    <form>
-                                        <div class="form-group">
-                                            <label for="logInEmail">Email address</label>
-                                            <input type="email" class="form-control" id="logInEmail" aria-describedby="emailHelp"
-                                                placeholder="Enter email">
-                                            <small id="emailHelp" class="form-text text-muted">We'll never share your
-                                                email
-                                                with anyone else.</small>
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="logInPassword">Password</label>
-                                            <input type="password" class="form-control" id="logInPassword" placeholder="Password">
-                                        </div>
-                                    </form>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                    <button id="logInSubmit" type="button" class="btn btn-primary">Submit</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </ul>
-            </div>
+            <form class="form-inline">
+                <input id=searchInput class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button id="searchBtn" type="button" class="btn btn-default">
+                    <i class="fa fa-search"></i>
+                </button>
+            </form>
         </nav>
-
         <!-- photo gallery -->
-        <br><h2 id = "backpacking">Backpacking</h2><br>
-         <div class="row" id="resultsPhotoGal">
+        <br>
+        <h2 id="backpacking">Backpacking</h2><br>
+        <div class="row" id="resultsPhotoGal">
             <div id="resultsRow1" class=col-md-4>
                 <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="https://via.placeholder.com/80" alt="Card image cap">
+                    <img class="card-img-top" src="https://www.rei.com/media/52cfa6be-b375-4f3b-a89d-256044c46080?size=120x90 "
+                    alt="Card image cap">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
+                        <h5 class="card-title">Osprey Aether AG 70 Pack - Mens</h5>
+                        <p class="card-text"> </p>
 
                     </div>
                 </div>
             </div>
             <div class=col-md-4>
                 <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="https://via.placeholder.com/80" alt="Card image cap">
+                    <img class="card-img-top" src="https://www.rei.com/media/2e7fc6fd-1a22-441f-a10e-12eff15334c6?size=120x90"
+                        alt="Card image cap">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
+                        <h5 class="card-title">REI Co-op Traverse 35 Pack</h5>
+                        <p class="card-text"> </p>
                     </div>
                 </div>
-            </div> 
+            </div>
             <div class=col-md-4>
                 <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src= "https://via.placeholder.com/80" alt="Card image cap">
+                    <img class="card-img-top" src="https://www.rei.com/media/b84eb196-0ff9-4500-bba7-275cbc96e6c0?size=784x588"
+                        alt="Card image cap">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
+                        <h5 class="card-title">Pack 4000</h5>
+                        <p class="card-text"> </p>
+                    </div>
+                </div>
+            </div>
+            <div class=col-md-4>
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="https://www.rei.com/media/b4c0bff8-f464-46c6-be9f-edeff3cac920?size=784x588"
+                        alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Helium Bivy</h5>
+                        <p class="card-text"> </p>
                     </div>
                 </div>
             </div>
         </div>
         <br>
         <hr>
-        <h2 id = "biking">Biking</h2><br>
+        <h2 id="biking">Biking</h2><br>
         <div class="row">
             <div id="resultsRow2" class=col-md-4>
                 <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="https://via.placeholder.com/80" alt="Card image cap">
+                    <img class="card-img-top" src="https://www.rei.com/media/e3294a41-1579-4673-a652-d5d56e805c54?size=784x588"
+                        alt="Card image cap">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
+                        <h5 class="card-title">Co-op Cycles DRT 1.1 Bike</h5>
+                        <p class="card-text"> </p>
 
                     </div>
                 </div>
             </div>
             <div class=col-md-4>
-                <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="https://via.placeholder.com/80" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
-                    </div>
-                </div>
             </div>
             <div class=col-md-4>
-                <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="https://via.placeholder.com/80" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
-                    </div>
-                </div>
             </div>
         </div>
         <br>
         <hr>
-        <h2 id = "campers">Campers</h2><br>
+        <h2 id="campers">Campers</h2><br>
         <div class="row">
             <div id="resultsRow3" class=col-md-4>
                 <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="https://via.placeholder.com/80" alt="Card image cap">
+                    <img class="card-img-top" src="https://www.leftcoastclassics.com/1969-volkswagen-westfalia-camper/1969-volkswagen-westfalia-camper-001.jpg"
+                        alt="Card image cap">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
+                        <h5 class="card-title">Big Bubba RV</h5>
+                        <p class="card-text"> </p>
 
                     </div>
                 </div>
             </div>
             <div class=col-md-4>
-                <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="https://via.placeholder.com/80" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
-                    </div>
-                </div>
             </div>
             <div class=col-md-4>
-                <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="https://via.placeholder.com/80" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
-                    </div>
-                </div>
             </div>
         </div>
         <br>
         <hr>
-        <h2 id = "camping">Camping</h2><br>
+        <h2 id="camping">Camping</h2><br>
         <div class="row">
             <div id="resultsRow4" class=col-md-4>
                 <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="https://via.placeholder.com/80" alt="Card image cap">
+                    <img class="card-img-top" src="https://www.rei.com/media/0d4d1ab5-0bc4-4946-862c-fdee323530e9?size=120x90"
+                        alt="Card image cap">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
+                        <h5 class="card-title">REI Co-op Half Dome 2 Plus Tent</h5>
+                        <p class="card-text"> </p>
 
                     </div>
                 </div>
             </div>
             <div class=col-md-4>
-                <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="https://via.placeholder.com/80" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
-                    </div>
-                </div>
             </div>
             <div class=col-md-4>
-                <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="https://via.placeholder.com/80" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
-                    </div>
-                </div>
             </div>
         </div>
         <br>
         <hr>
-        <h2 id = "fishing">Fishing</h2><br>
+        <h2 id="fishing">Fishing</h2><br>
         <div class="row">
             <div id="resultsRow5" class=col-md-4>
-                <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="https://via.placeholder.com/80" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
-
-                    </div>
-                </div>
             </div>
             <div class=col-md-4>
-                <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="https://via.placeholder.com/80" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
-                    </div>
-                </div>
             </div>
             <div class=col-md-4>
-                <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="https://via.placeholder.com/80" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
-                    </div>
-                </div>
             </div>
         </div>
         <br>
         <hr>
-        <h2 id = "rockClimbing">Rock Climbing</h2><br>
+        <h2 id="rockClimbing">Rock Climbing</h2><br>
         <div class="row">
             <div id="resultsRow6" class=col-md-4>
+            </div>
+            <div class=col-md-4>
+            </div>
+            <div class=col-md-4>
+            </div>
+        </div>
+        <br>
+        <hr>
+        <h2 id="waterSports">Water Sports</h2>
+        <br>
+        <div class="row">
+            <div id="resultsRow7" class=col-md-4>
                 <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="https://via.placeholder.com/80" alt="Card image cap">
+                    <img class="card-img-top" src="https://www.rei.com/media/f258f1d1-eac1-4e42-9ef2-2b12a7ecd3c3?size=120x90"
+                        alt="Card image cap">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
+                        <h5 class="card-title">Advanced Elements AdvancedFrame Kayak</h5>
+                        <p class="card-text"> </p>
 
                     </div>
                 </div>
             </div>
             <div class=col-md-4>
                 <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="https://via.placeholder.com/80" alt="Card image cap">
+                    <img class="card-img-top" src="https://www.rei.com/media/0fe9f333-7765-4a76-8eca-3833bfaae1ca?size=784x588"
+                        alt="Card image cap">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
+                        <h5 class="card-title">Emotion Kayaks Revel 10 Kayak</h5>
+                        <p class="card-text"> </p>
                     </div>
                 </div>
             </div>
             <div class=col-md-4>
                 <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="https://via.placeholder.com/80" alt="Card image cap">
+                    <img class="card-img-top" src="https://www.rei.com/media/0fe9f333-7765-4a76-8eca-3833bfaae1ca?size=784x588"
+                        alt="Card image cap">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
+                        <h5 class="card-title">Emotion Kayaks Revel 10 Kayak"</h5>
+                        <p class="card-text"> </p>
                     </div>
                 </div>
             </div>
         </div>
         <br>
         <hr>
-        <h2 id = "waterSports">Water Sports</h2>
+        <h2 id="winterSports">Winter Sports</h2>
         <br>
         <div class="row">
-                <div id="resultsRow7" class=col-md-4>
-                    <div class="card" style="width: 18rem;">
-                        <img class="card-img-top" src="https://via.placeholder.com/80" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                                the card's content.</p>
-    
-                        </div>
-                    </div>
-                </div>
-                <div class=col-md-4>
-                    <div class="card" style="width: 18rem;">
-                        <img class="card-img-top" src="https://via.placeholder.com/80" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                                the card's content.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class=col-md-4>
-                    <div class="card" style="width: 18rem;">
-                        <img class="card-img-top" src="https://via.placeholder.com/80" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                                the card's content.</p>
-                        </div>
+            <div id="resultsRow7" class=col-md-4>
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" style="width:44%;" src="https://www.rei.com/media/eee022ad-d218-4c22-acc8-05200bd1b0b0?size=120x90"
+                        alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Capita Children of the Gnar Snowboard - Boys</h5>
+                        <p class="card-text"> </p>
+
                     </div>
                 </div>
             </div>
-            <br>
-            <hr>
-            <h2 id = "winterSports">Winter Sports</h2>
-            <br>
-            <div class="row">
-                    <div id="resultsRow7" class=col-md-4>
-                        <div class="card" style="width: 18rem;">
-                            <img class="card-img-top" src="https://via.placeholder.com/80" alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                                    the card's content.</p>
-        
-                            </div>
-                        </div>
-                    </div>
-                    <div class=col-md-4>
-                        <div class="card" style="width: 18rem;">
-                            <img class="card-img-top" src="https://via.placeholder.com/80" alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                                    the card's content.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class=col-md-4>
-                        <div class="card" style="width: 18rem;">
-                            <img class="card-img-top" src="https://via.placeholder.com/80" alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                                    the card's content.</p>
-                            </div>
-                        </div>
+            <div class=col-md-4>
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" style="width:16%;" src="https://www.rei.com/media/acd25073-51f1-4e80-b361-b7bdc90ebdb3?size=784x588"
+                        alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Rossignol Seek 7 Tour Skis</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
                     </div>
                 </div>
-        <div id = "spaceDiv"></div>  
-    <!-- footer -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            </div>
+            <div class=col-md-4>
+            </div>
+        </div>
+        <div id="spaceDiv"></div>
+        <!-- footer -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="collapse navbar-collapse" id="footer">
                 <ul class="nav justify-content-center">
                     <li class="nav-item">
@@ -427,10 +247,8 @@
 
 </body>
 <!--bootstrap jqueryscripts -->
-<script
-  src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
     crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
